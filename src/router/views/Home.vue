@@ -9,7 +9,7 @@
             alt=""
           />
         </div>
-        <div class="h-text mt-3">
+        <div class="h-text text-center mt-3">
           <h4 class="">Welcome to <span class="navbar-brand fw-bold text-danger fst-italic">The HoMe Meal</span></h4>
         </div>
         <div class="h-logo w-25">
