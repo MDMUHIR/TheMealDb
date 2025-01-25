@@ -1,5 +1,10 @@
-export default {
+import { reactive } from "vue";
+
+const data = reactive({
   searchedMeals: [],
-  mealsByLetter: [],
-  mealsByIngredient: [],
-};
+  randomMeals: [],
+  mealDetails: {},
+  error: "",
+});
+
+export { data };

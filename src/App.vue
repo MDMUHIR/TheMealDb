@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="h-100 w-100">
+    <div class="h-100 w-100 bg-dark bg-opacity-50 ">
       <router-view />
     </div>
 </template>

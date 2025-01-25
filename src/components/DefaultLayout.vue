@@ -1,6 +1,6 @@
 <template>
   <div class="appBody">
-    <header>
+    <header class="fixed-top">
       <Navbar></Navbar>
     </header>
     <div class="container h-100 w-100 mt-5 pt-4 pb-4">

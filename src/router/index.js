@@ -6,7 +6,7 @@ import MealsByIngredient from "./views/MealsByIngredient.vue";
 import MealsByLetter from "./views/MealsByLetter.vue";
 import MealDetails from "./views/MealDetails.vue";
 import Ingredients from "./views/Ingredients.vue";
-import Contact from "./views/Contact.vue"
+
 import AboutUs from "./views/AboutUs.vue"
 
 const routes = [
@@ -44,11 +44,7 @@ const routes = [
         name: "mealDetails",
         component: MealDetails,
       },
-      {
-        path: "/contact",
-        name: "contact",
-        component: Contact,
-      },
+     
       {
         path: "/about-us",
         name: "aboutUs",

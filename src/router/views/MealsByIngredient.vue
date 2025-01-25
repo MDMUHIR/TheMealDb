@@ -1,24 +1,24 @@
 <template>
   <div class="container">
     <div class="inventory mt-2">
-     <!-- -->
-     <Meals :meals="meals" />
+      <!-- -->
+      <Meals :items="data.searchedMeals" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { computed, onMounted, ref } from "vue";
-import store from "../../store";
+
 import { useRoute } from "vue-router";
 import Meals from "../../components/Meals.vue";
+import { searchMealsByIngredient } from "../../store/actions";
+import { data } from "../../store/state";
 
 const route = useRoute();
 
-const meals = computed(() => store.state.mealsByIngredient);
-
 onMounted(() => {
-  store.dispatch("searchMealsByIngredient", route.params.ingredient);
+  searchMealsByIngredient(route.params.ingredient);
 });
 </script>
 
